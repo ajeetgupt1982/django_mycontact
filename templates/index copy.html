@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Required Meta tag-->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<!--Boot starp css-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
+<!--custom css-->
+<link rel="stylesheet" href="{% static './css/main.css' %}"/>
+<!--font and icon-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+<title>Django Contact</title>
+</head>
+<body>
+<!--Navbar-->
+<nav>
+<a class="logo" href="/index.html">
+<i class="fas fa-user-circle"></i>&nbsp;Contacts</a>
+<form class="form-inline-my-2" action="search.html">
+<input type="text" class="form-control search-box" type="search" placeholder="Find contacts..." name="search_term"/>
+</form>
+</nav>
+<br>
+<!-- Main Section -->
+
+<div class="container">
+      <h3 class="heading font-weight-light">Here are your contacts</h3>
+      <hr />
+    </div>
+
+<div class="container main-part">
+
+<!--card details for Boy-->
+
+<div class="card my-2 mx-2 boy-card">
+<img src="{% static './images/boy.png' %}" class="img-fluid"/>
+<div class="card-header">
+<a href="detail.html" class="text-white header-link">
+<i class="fas fa-mars mr-2"></i>Anu Pink</a>
+</div>
+<div class="card-body pb-0">
+<p>
+<i class="fas fa-at mr-2"></i>
+<a href="mailto:pinkjune@gmail.com">pinkjun@gmail.com</a>
+</p>
+<p>
+<i class="fas fa-phone mr-2"></i>
+<a href="tel:9818323900">9891909909</a>
+</p>
+<p><i class="fas fa-info-circle mr-2"></i>Freind</p>
+</div>
+</div>
+<!--card details for girl-->
+<div class="card my-2 mx-2 girl-card">
+<img src="{% static './images/girl.png' %}" class="img-fluid"/>
+<div class="card-header">
+<a href="detail.html" class="text-white header-link">
+<i class="fas fa-venus mr-2"></i>June Pink</a>
+</div>
+<div class="card-body pb-0">
+<p>
+<i class="fas fa-at mr-2"></i>
+<a href="mailto:pinkjune@gmail.com">pinkjun@gmail.com</a>
+</p>
+<p>
+<i class="fas fa-phone mr-2"></i>
+<a href="tel:9818323900">9891909909</a>
+</p>
+<p><i class="fas fa-info-circle mr-2"></i>Freind</p>
+</div>
+</div>
+
+</div>
+
+<!--Main Section End -->
+
+<!-- footer -->
+    <footer class="mt-4 p-2">
+      <p class="text-center p-1 m-0">&copy; My Contacts 2019</p>
+    </footer>
+    <!-- footer ends -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></
+</body>
+</html>
+
+
+
+
+
+
+
